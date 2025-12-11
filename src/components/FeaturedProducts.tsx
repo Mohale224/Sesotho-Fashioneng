@@ -56,8 +56,8 @@ export default function FeaturedProducts() {
     <section id="shop" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-4">
-            <span className="text-orange-400 font-medium text-sm tracking-wider">
+          <div className="inline-block px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-4">
+            <span className="text-yellow-400 font-medium text-sm tracking-wider">
               FEATURED COLLECTION
             </span>
           </div>
@@ -73,29 +73,29 @@ export default function FeaturedProducts() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-800 hover:border-orange-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/10"
+              className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/10"
             >
               <div className="aspect-[3/4] overflow-hidden bg-gray-800">
                 <img
-                  src={product.images[0] || 'https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800'}
+                  src='/images/olady-oa-roka-shirt.png'
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
 
               <div className="absolute top-4 right-4 flex flex-col gap-2">
-                <button className="w-10 h-10 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors duration-200">
+                <button className="w-10 h-10 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors duration-200">
                   <Heart className="w-5 h-5 text-white" />
                 </button>
               </div>
 
               <div className="p-6">
                 <div className="mb-2">
-                  <span className="text-orange-400 text-sm font-medium">
+                  <span className="text-yellow-400 text-sm font-medium">
                     {product.category}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">
                   {product.name}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-2">
@@ -104,11 +104,11 @@ export default function FeaturedProducts() {
 
                 <div className="flex items-center justify-between">
                   <div className="text-2xl font-bold text-white">
-                    R{product.price.toFixed(2)}
+                    M{product.price.toFixed(2)}
                   </div>
                   <button
                     onClick={() => handleAddToCart(product)}
-                    className="px-4 py-2 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 flex items-center space-x-2"
+                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-red-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-red-700 transition-all duration-300 flex items-center space-x-2"
                   >
                     <ShoppingCart className="w-4 h-4" />
                     <span>Add</span>
