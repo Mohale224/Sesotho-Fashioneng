@@ -4,7 +4,13 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 opacity-20">
+  <img
+    src="/images/landing-page-photo.png"
+    alt="Basotho"
+    className="w-full h-full object-cover"
+  />
+</div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
       </div>
 

@@ -104,10 +104,7 @@ export default function Events() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="aspect-video lg:aspect-auto overflow-hidden bg-gray-800">
                     <img
-                      src={
-                        event.images[0] ||
-                        'https://images.pexels.com/photos/2263410/pexels-photo-2263410.jpeg?auto=compress&cs=tinysrgb&w=1200'
-                      }
+                      src='/images/event-for-2024.jpg'
                       alt={event.name}
                       className="w-full h-full object-cover"
                     />

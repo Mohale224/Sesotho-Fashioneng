@@ -74,7 +74,7 @@ export default function UpcomingEvents() {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3 aspect-video md:aspect-auto overflow-hidden bg-gray-800">
                   <img
-                    src={event.images[0] || 'https://images.pexels.com/photos/2263410/pexels-photo-2263410.jpeg?auto=compress&cs=tinysrgb&w=800'}
+                    src='/images/event-photo-stunna.jpeg'
                     alt={event.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
