@@ -112,7 +112,7 @@ export default function Events() {
 
                   <div className="p-8">
                     <div className="mb-6">
-                      <span className="px-3 py-1 bg-orange-500/10 border border-orange-500/30 rounded-full text-orange-400 text-sm font-medium">
+                      <span className="px-3 py-1 bg-yellow-500/10 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-medium">
                         {event.status.toUpperCase()}
                       </span>
                     </div>
@@ -121,11 +121,11 @@ export default function Events() {
 
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-3 text-gray-300">
-                        <Calendar className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                        <Calendar className="w-5 h-5 text-yellow-400 flex-shrink-0" />
                         <span>{formatDate(event.event_date)}</span>
                       </div>
                       <div className="flex items-center gap-3 text-gray-300">
-                        <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                        <MapPin className="w-5 h-5 text-yellow-400 flex-shrink-0" />
                         <span>{event.location}</span>
                       </div>
                     </div>
@@ -135,7 +135,7 @@ export default function Events() {
                     {tickets[event.id] && tickets[event.id].length > 0 && (
                       <div>
                         <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                          <Ticket className="w-5 h-5 text-orange-400" />
+                          <Ticket className="w-5 h-5 text-yellow-400" />
                           Available Tickets
                         </h3>
 
@@ -160,12 +160,12 @@ export default function Events() {
 
                                 <div className="text-right ml-4">
                                   <div className="text-2xl font-bold text-white mb-2">
-                                    R{ticket.price.toFixed(2)}
+                                    M{ticket.price.toFixed(2)}
                                   </div>
                                   <button
                                     onClick={() => handleAddTicket(ticket, event)}
                                     disabled={available === 0}
-                                    className="px-4 py-2 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
                                   >
                                     {available === 0 ? 'Sold Out' : 'Add to Cart'}
                                   </button>
