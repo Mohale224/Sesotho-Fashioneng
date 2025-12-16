@@ -70,30 +70,39 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4 mb-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
-              >
-                <Instagram className="w-5 h-5 text-yellow-400" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
-              >
-                <Facebook className="w-5 h-5 text-yellow-400" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
-              >
-                <Twitter className="w-5 h-5 text-yellow-400" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
-              >
-                <Mail className="w-5 h-5 text-yellow-400" />
-              </a>
+            <a
+        href="https://www.instagram.com/sesothofashioneng?igsh=czM0dmV1MmF3eXdy"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
+      >
+        <Instagram className="w-5 h-5 text-yellow-400" />
+      </a>
+      <a
+        href="https://www.facebook.com/share/17Sp4WuGn2/?mibextid=wwXIfr"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
+      >
+        <Facebook className="w-5 h-5 text-yellow-400" />
+      </a>
+      
+
+      <a
+        href="https://x.com/Mamphetengkoote"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
+      >
+        <Twitter className="w-5 h-5 text-yellow-400" />
+      </a>
+
+      <a
+        href="mailto:mamphetengkoote402@gmail.com"
+        className="w-10 h-10 bg-yellow-500/10 hover:bg-yellow-500/20 rounded-lg flex items-center justify-center transition-colors"
+      >
+        <Mail className="w-5 h-5 text-yellow-400" />
+      </a>
             </div>
             <p className="text-gray-400 text-sm">
               Stay updated with our latest collections and events.
